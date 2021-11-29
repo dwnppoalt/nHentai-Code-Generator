@@ -24,7 +24,7 @@ codes = list(codes)
 with open(name, "w") as f:
     f.write("\n".join(codes))
 
-    
+
 end = time.time()
 print(str(end - start) + " second/s elapsed.")
 print("Found {} with {} tries.".format(len(codes), tries))
