@@ -4,8 +4,8 @@ import re
 
 url = "https://nhentai.net/random/"
 
-num = int(input("How Many? - "))
-name = input("Name of output text file? - ")
+num = int(input("How Many?: "))
+name = input("Name of output text file?: ")
 print("CAUTION: The generation of the codes can be slow if your internet connection is slow.")
 
 tries = 0
@@ -27,5 +27,5 @@ with open(name, "w") as f:
 
 end = time.time()
 print(str(end - start) + " second/s elapsed.")
-print("Found {} with {} tries.".format(len(codes), tries))
+print("Found {} codes with {} tries.".format(len(codes), tries))
 input("Press Enter to continue...")
