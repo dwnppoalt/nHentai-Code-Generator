@@ -1,44 +1,31 @@
-import random
 import requests
 import time
-import os
-error = 0
-wrkng = 0
+import re
+
+url = "https://nhentai.net/random/"
+
 num = int(input("How Many? - "))
 name = input("Name of output text file? - ")
-print("CAUTION: Sending can be slow if your internet connection is slow.")
+print("CAUTION: The generation of the codes can be slow if your internet connection is slow.")
+
+tries = 0
 start = time.time()
+codes = set()
 
-for i in range(num):
-    outF = open(name + ".txt", "a")
-    seed = random.sample(range(374305), 1)
-    if(num == wrkng):
-            break
-    url = "http://nhentai.to/g/" + str(seed)
-    s = url
-    s1 = s.replace("[","").replace("]","")
-    r = requests.get(s1)
-    if r.status_code == 404:
-            error += 1
-            errurl = url
-    else:
-            outF.writelines(str(s1))
-            outF.write('\n')
-            wrkng += 1
-        
-    if os.name == 'posix':
-            _ = os.system('clear')
-    else:
-            _ = os.system('cls')
-    print("Counter:")
-    print("Error: " + str(error))
-    print("Completed: " + str(wrkng))
-    outF.close()
+while len(codes) != num:
+    tries += 1
+    r = requests.get(url).url
+    code = re.findall(r"(\d+)", r)
+    if len(code):
+        codes.add(code[0])
 
- 
+codes = list(codes)
+
+with open(name, "w") as f:
+    f.write("\n".join(codes))
+
+    
 end = time.time()
 print(str(end - start) + " second/s elapsed.")
-print("Output: " + name + ".txt")
-print("404 = " + str(error))
-print("Working = " + str(wrkng))
+print("Found {} with {} tries.".format(len(codes), tries))
 input("Press Enter to continue...")
