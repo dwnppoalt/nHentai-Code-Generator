@@ -6,4 +6,4 @@ If you have incognito on :smirk:
 
 
 
-Also massive thanks to Kian S. Aguilar for testing it, u/SnipahShot, u/boriisi, u/FlamptX and u/ThatsALovelyShirt.
+Also massive thanks to u/SnipahShot, u/boriisi, u/FlamptX and u/ThatsALovelyShirt.
