@@ -46,6 +46,15 @@ To access the text file on android, run the following:
 `termux-open (filename).txt`
 
 
+#### Error `ValueError: invalid literal for int() with base 10:`
+
+The input is not an integer.
+
+#### Error `OSError: [Errno 22] Invalid argument:`
+
+The file name is too long.
+
+
 
 -----
 
