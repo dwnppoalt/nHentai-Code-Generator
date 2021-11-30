@@ -21,7 +21,7 @@ while len(codes) != num:
 
 codes = list(codes)
 
-with open(name, "w") as f:
+with open(name + ".txt", "w") as f:
     f.write("\n".join(codes))
 
 
