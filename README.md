@@ -1,4 +1,4 @@
-# nHentai-Code-Generator 
+# nHentai Code Generator 
 
 A simple, console based nHentai Code Generator.
 
@@ -36,6 +36,10 @@ Download [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en
 #### Where are the codes saved?
 
 The codes are saved in the same folder as the nhentai.py.
+
+To access the text file on Windows, run the following on Powershell:
+
+`.\(filename).txt`
 
 To access the text file on android, run the following:
 
