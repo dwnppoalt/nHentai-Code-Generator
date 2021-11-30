@@ -46,4 +46,4 @@ To access the text file on android, run the following:
 -----
 
 
-Also massive thanks to u/AlterEgoWasTaken, u/SnipahShot, u/boriisi, u/FlamptX and u/ThatsALovelyShirt.
+Also massive thanks to [u/AlterEgoWasTaken](https://github.com/ArjixWasTaken), [u/SnipahShot](https://reddit.com/user/SnipahShot), [u/boriisi](https://www.reddit.com/user/boriisi), [u/FlamptX](https://www.reddit.com/user/flamptx) and [u/ThatsALovelyShirt.](https://www.reddit.com/user/thatsalovelyshirt)
